@@ -1,7 +1,11 @@
 nav{
   margin-bottom: 20px;
 }
+.centrarCanvas{
+  text-align: center;
+}
 
 .ejercicio4,  .ejercicio6, .ejercicio7{
-  margin-top: 1%;
+  margin: 1%;
+
 }
