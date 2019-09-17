@@ -17,8 +17,10 @@ let presionada = false;
 //busco el boton que realizara el evento de CerrarPoligono
 let boton = document.querySelector("#cerrarPoligono");
 boton.addEventListener("click", cerrarPoligono);
+
 let poligono = new Poligono();
 let cerrado = false;
+
 
 //borrar punto del poligono
 function borrarPunto(e){
@@ -123,71 +125,3 @@ function clickCanvas(e){
     }
 
 }
-
-
-
-//let poligono = new Poligono();
-/*
-//contador de puntos
-let contador=0;
-
-let anteriorX=0;
-let anteriorY=0;
-let primeraposicionX=0;
-let primeraposicionY=0;
-//añadir el evento de click al canvas
-canvas.addEventListener("click", mouseDown);
-ctx.fillStyle="#FF0000";
-
-
-
-//detectar ejes en el click
-
-
-
-
-//dibujar el circulo, si es primero sin linea.
-function comprobarEditable(x,y){
-  if(contador==0){
-    crearCirculo(x,y);
-    primeraposicionX=x;
-    primeraposicionY=y;
-    anteriorX=x;
-    anteriorY=y;
-    contador++;
-  }
-  else{
-    crearCirculo(x,y);
-    ctx.strokeStyle = "#FFFF00";
-    ctx.moveTo(anteriorX,anteriorY);
-    ctx.lineTo(x,y);
-    ctx.stroke();
-    anteriorX=x;
-    anteriorY=y;
-  }}
-
-function crearCirculo(x,y){
-    ctx.fillStyle="#FF0000";
-    ctx.beginPath();
-    ctx.arc(x,y,10,0, Math.PI * 2);
-    ctx.fill();
-  }
-
-  function CerrarPoligono(){
-    ctx.strokeStyle = "#FFFF00";
-    ctx.moveTo(anteriorX,anteriorY);
-    ctx.lineTo(primeraposicionX,primeraposicionY);
-    ctx.stroke();
-  }
-
-
-/*
-
-let contador=0;
-
-
-
-
-
-
-*/
