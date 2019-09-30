@@ -1,0 +1,132 @@
+html{
+    color: aquamarine;
+}
+.fondo{
+    height: 500px;
+    width: 98%;
+    border: 2px solid black;
+    background: url('./images/fondo.png') 0 0 repeat-x;
+    animation: movefondo 12s linear infinite;
+
+}
+@keyframes movefondo{
+    0% {
+        background-position: 3200px;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+
+.saltar{
+    top: 300px; 
+    margin-left: 130px;
+    height: 186px;
+    width: 180px;
+    background:  url('./images/saltaFijo.png') 0 0;
+    animation: saltar 1.5s steps(6) infinite;
+    position: absolute;
+
+}
+
+@keyframes saltar{
+0%{
+    background-position: 0;
+}
+100%{
+    background-position: -1112px;
+}
+}
+
+
+.caminar{
+    top: 300px; 
+    margin-left: 130px;
+    height: 186px;
+    width: 185px;
+    background:  url('./images/caminaFinal4.png') 0 0;
+    animation: caminar 1.2s steps(6) infinite;
+    position: absolute;
+
+}
+
+@keyframes caminar{
+0%{
+    background-position: 0;
+}
+100%{
+    background-position: -1112px;
+}
+}
+
+.caer{
+    top: 300px; 
+    margin-left: 130px;
+    height: 186px;
+    width: 180px;
+    background:  url('./images/caer1.png') 0 0;
+    animation: caminar 2.5s steps(6) infinite;
+    position: absolute;
+
+}
+
+@keyframes caer{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: -1112px;
+    }
+    }
+
+
+.aparecer{
+    height: 80px;
+    width: 85px;
+    background: url('./images/objeto.png') 0 0;
+    position: absolute;
+    top: 420px; 
+    left: 1000px; 
+    animation: rotar 4s ease 0 infinite normal none;
+}
+
+@keyframes rotar {
+    0%, 100% {
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+
+}
+.vidas1{
+    margin-left: 800px;
+}
+.vidas1, .vidas2, .vidas3{
+    height: 54px;
+    width: 74px;
+    display: inline-block;
+    
+    background: url('./images/vidas.png') 0 0;
+    margin-top: 20px;
+
+    animation: girarCorazon 1.2s steps(5) infinite;
+}
+.vidaVacia{
+    height: 54px;
+    width: 74px;
+    display: inline-block;
+    background: url('./images/vidaVacia.png');
+    margin-top: 20px;
+
+}
+
+
+@keyframes girarCorazon{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: -370px;
+    }
+    }
