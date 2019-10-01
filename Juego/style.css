@@ -156,13 +156,21 @@ html{
 }
 
 .jugar{
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-
 }
 .jugar a{
     font-size: 40px;
     color: black ;
     
+}
+.indicaciones{
+    position: static;   
+    margin-top: 510px;
+    font-size: 15px;
+    font-family:Verdana;
+    font-style: italic;
+    color: black;
+ 
 }
