@@ -4,7 +4,7 @@ html{
 .fondo{
     position: absolute;
     height: 500px;
-    width: 98%;
+    width: 1270px;
     border: 2px solid black;
     background: url('./images/fondoDosCielo.png') 0 0 repeat-x;
     animation: movefondo 60s linear infinite;
@@ -22,14 +22,14 @@ html{
 .piso{
     position: absolute;
     height: 500px;
-    width: 100%;
+    width: 1270px;
     background: url('./images/fondoDosPiso.png') 0 0 repeat-x;
-    animation: movefondo 12s linear infinite;
+    animation: movePiso 12s linear infinite;
 
 }
-@keyframes movefondo{
+@keyframes movePiso{
     0% {
-        background-position: 1413px;
+        background-position: 1473px;
     }
     100%{
         background-position: 0;
@@ -160,10 +160,15 @@ html{
     display: flex;
     justify-content: center;
 }
-.jugar a{
+#play{
     font-size: 40px;
-    color: black ;
-    
+    color: black ; 
+    border-bottom: 3px solid orange;
+    opacity: 0.8;
+   
+}
+#play:hover{
+opacity: 0.8;
 }
 .indicaciones{
     position: static;   

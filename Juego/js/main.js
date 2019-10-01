@@ -10,7 +10,7 @@ let objeto = document.querySelector(".objeto");
 gameOver.addEventListener("click", again);
 let caminando = true;
 let jugar = true;
-let leftObjeto = 1000;
+let leftObjeto = 1200;
 let topObjeto = 420;
 let rightObjeto;
 let topNinja = 300;
@@ -69,7 +69,7 @@ function update(){
     }
     else{
         // si el objeto ya llego al final del div, vuelve a aparecer a la derecha
-        leftObjeto = 1000;
+        leftObjeto = 1200;
     }
 }
     // colision del objeto con el ninja 
@@ -126,7 +126,7 @@ function update(){
        setTimeout(
            function(){
                 requestAnimationFrame(levantarse); }, 1700);
-                leftObjeto = 1000;
+                leftObjeto = 1200;
     }
    
     else{
