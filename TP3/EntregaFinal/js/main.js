@@ -42,7 +42,7 @@ gameLoop();
 
 function detectarEvento(e){  
     if(e.key == " "){
-        if((!colision)&&(jugar)){
+        if((!colision)&&(jugar)&&(caminando)){
         caminando = false;
         setTimeout(function(){requestAnimationFrame(revertir);}, 1400);
         }
@@ -65,7 +65,7 @@ function update(){
     if(!colision){
     // si el objeto no llego al final del div, sigue moviendose a la izquierda
     if((leftObjeto>0)&&(jugar==true)){
-       leftObjeto= leftObjeto-6;
+       leftObjeto= leftObjeto-10;
     }
     else{
         // si el objeto ya llego al final del div, vuelve a aparecer a la derecha
@@ -125,7 +125,7 @@ function update(){
         // vuelve a levantar el personaje luego de 1.7 s
        setTimeout(
            function(){
-                requestAnimationFrame(levantarse); }, 1700);
+                requestAnimationFrame(levantarse); }, 1200);
                 leftObjeto = 1200;
     }
    

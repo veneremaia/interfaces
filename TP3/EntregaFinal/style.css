@@ -24,7 +24,7 @@ html{
     height: 500px;
     width: 1270px;
     background: url('./images/fondoDosPiso.png') 0 0 repeat-x;
-    animation: movePiso 12s linear infinite;
+    animation: movePiso 6s linear infinite;
 
 }
 @keyframes movePiso{
@@ -42,7 +42,7 @@ html{
     height: 186px;
     width: 180px;
     background:  url('./images/saltaFijo.png') 0 0;
-    animation: saltar 1.5s steps(6) infinite;
+    animation: saltar 1.0s steps(6) infinite;
     position: absolute;
 
 }
@@ -63,7 +63,7 @@ html{
     height: 186px;
     width: 185px;
     background:  url('./images/caminaFinal4.png') 0 0;
-    animation: caminar 1.2s steps(6) infinite;
+    animation: caminar 0.9s steps(6) infinite;
     position: absolute;
 
 }
@@ -83,7 +83,7 @@ html{
     height: 186px;
     width: 180px;
     background:  url('./images/caer1.png') 0 0;
-    animation: caminar 2.5s steps(6) infinite;
+    animation: caminar 1.6s steps(6) infinite;
     position: absolute;
 
 }
