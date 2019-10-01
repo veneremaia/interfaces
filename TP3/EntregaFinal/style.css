@@ -6,25 +6,41 @@ html{
     height: 500px;
     width: 1270px;
     border: 2px solid black;
-    background: url('./images/fondoDosCielo.png') 0 0 repeat-x;
-    animation: movefondo 60s linear infinite;
+    background: url('./images/fondoPrueba.png') 0 0 repeat-x;
+    animation: movefondo 70s linear infinite;
 
 }
 @keyframes movefondo{
     0% {
-        background-position: 1413px;
+        background-position: 1473px;
     }
     100%{
         background-position: 0;
     }
 }
-
 .piso{
     position: absolute;
     height: 500px;
     width: 1270px;
     background: url('./images/fondoDosPiso.png') 0 0 repeat-x;
     animation: movePiso 6s linear infinite;
+
+}
+@keyframes movePiso{
+    0% {
+        background-position: 1473px;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+
+.montanias{
+    position: absolute;
+    height: 500px;
+    width: 1270px;
+    background: url('./images/montaniasAtras.png') 0 0 repeat-x;
+    animation: movePiso 17s linear infinite;
 
 }
 @keyframes movePiso{
