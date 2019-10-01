@@ -1,0 +1,181 @@
+html{
+    color: aquamarine;
+}
+.fondo{
+    position: absolute;
+    height: 500px;
+    width: 1270px;
+    border: 2px solid black;
+    background: url('./images/fondoDosCielo.png') 0 0 repeat-x;
+    animation: movefondo 60s linear infinite;
+
+}
+@keyframes movefondo{
+    0% {
+        background-position: 1413px;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+
+.piso{
+    position: absolute;
+    height: 500px;
+    width: 1270px;
+    background: url('./images/fondoDosPiso.png') 0 0 repeat-x;
+    animation: movePiso 12s linear infinite;
+
+}
+@keyframes movePiso{
+    0% {
+        background-position: 1473px;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+
+.saltar{
+    top: 300px; 
+    margin-left: 130px;
+    height: 186px;
+    width: 180px;
+    background:  url('./images/saltaFijo.png') 0 0;
+    animation: saltar 1.5s steps(6) infinite;
+    position: absolute;
+
+}
+
+@keyframes saltar{
+0%{
+    background-position: 0;
+}
+100%{
+    background-position: -1112px;
+}
+}
+
+
+.caminar{
+    top: 300px; 
+    margin-left: 130px;
+    height: 186px;
+    width: 185px;
+    background:  url('./images/caminaFinal4.png') 0 0;
+    animation: caminar 1.2s steps(6) infinite;
+    position: absolute;
+
+}
+
+@keyframes caminar{
+0%{
+    background-position: 0;
+}
+100%{
+    background-position: -1112px;
+}
+}
+
+.caer{
+    top: 300px; 
+    margin-left: 130px;
+    height: 186px;
+    width: 180px;
+    background:  url('./images/caer1.png') 0 0;
+    animation: caminar 2.5s steps(6) infinite;
+    position: absolute;
+
+}
+
+@keyframes caer{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: -1112px;
+    }
+    }
+
+
+.aparecer{
+    height: 80px;
+    width: 85px;
+    background: url('./images/objeto.png') 0 0;
+    position: absolute;
+    top: 420px; 
+    left: 1000px; 
+    animation: rotar 4s ease 0 infinite normal none;
+}
+
+@keyframes rotar {
+    0%, 100% {
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+
+}
+.vidas{
+    position: absolute;
+    display: flex;
+    
+}
+
+.vidas1, .vidas2, .vidas3{
+    height: 54px;
+    width: 74px;
+    background: url('./images/vidas.png') 0 0;
+    margin-top: 20px;
+
+    animation: girarCorazon 1.2s steps(5) infinite;
+}
+.vidaVacia{
+    
+    height: 54px;
+    width: 74px;
+    background: url('./images/vidaVacia.png');
+    margin-top: 20px;
+
+}
+
+
+@keyframes girarCorazon{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: -370px;
+    }
+    }
+
+.gameOver{
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.jugar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#play{
+    font-size: 40px;
+    color: black ; 
+    border-bottom: 3px solid orange;
+    opacity: 0.8;
+   
+}
+#play:hover{
+opacity: 0.8;
+}
+.indicaciones{
+    position: static;   
+    margin-top: 510px;
+    font-size: 15px;
+    font-family:Verdana;
+    font-style: italic;
+    color: black;
+ 
+}
