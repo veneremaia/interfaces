@@ -7,7 +7,7 @@ html{
     width: 98%;
     border: 2px solid black;
     background: url('./images/fondoDosCielo.png') 0 0 repeat-x;
-    animation: movefondo 25s linear infinite;
+    animation: movefondo 60s linear infinite;
 
 }
 @keyframes movefondo{
