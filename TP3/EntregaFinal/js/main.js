@@ -7,6 +7,8 @@ let vidas3 = document.querySelector(".vidas3");
 let gameOver = document.querySelector("#play");
 let claseFondo = " fondo";
 let objeto = document.querySelector(".objeto");
+let cantidadAsteroides = document.querySelector("#cantidadAsteroides");
+let cantAsteroides = 0;
 gameOver.addEventListener("click", again);
 let caminando = true;
 let jugar = true;
@@ -17,6 +19,7 @@ let topNinja = 300;
 let rightNinja = 285;
 let bottomNinja;
 let leftNinja = 100;
+
 //cuenta las vidas del jugador
 
 let unaVida = "vidas1";
@@ -37,6 +40,7 @@ function again(){
     dosVidas = "vidas2";
     tresVidas = "vidas3";
     colision = false;
+    cantAsteroides = 0;
 }
 gameLoop();
 
@@ -69,6 +73,9 @@ function update(){
     }
     else{
         // si el objeto ya llego al final del div, vuelve a aparecer a la derecha
+        if(jugar){
+        cantAsteroides++;
+        }
         leftObjeto = 1200;
     }
 }
@@ -79,7 +86,6 @@ function update(){
             if((leftObjeto==rightNinja-35)||(topObjeto<bottomNinja)){
               if(contador>0){
                 contador--; 
-
               }
         }
        
@@ -161,6 +167,7 @@ function draw(){
     vidas2.className = dosVidas;
     vidas3.className = tresVidas;
     gameOver.hidden = jugar;
+    cantidadAsteroides.innerHTML = cantAsteroides
 }
 
 function salte(){

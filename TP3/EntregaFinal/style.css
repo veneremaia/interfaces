@@ -121,11 +121,10 @@ html{
     position: absolute;
     top: 420px; 
     left: 1000px; 
-    animation: rotar 4s ease 0 infinite normal none;
 }
 
 @keyframes rotar {
-    0%, 100% {
+    0%, 100%    {
         transform: rotate(10deg);
     }
     50%{
@@ -138,7 +137,15 @@ html{
     display: flex;
     
 }
-
+.asteroides{
+    margin-top: 20px;
+    position: absolute;
+    margin-left: 80%;
+    height: 80px;
+    width: 85px;
+    background: url('./images/objeto.png');
+    animation: rotar 4s ease 0 infinite normal none;
+}
 .vidas1, .vidas2, .vidas3{
     height: 54px;
     width: 74px;
@@ -155,7 +162,12 @@ html{
     margin-top: 20px;
 
 }
-
+#cantidadAsteroides {
+ margin-left: 100%;
+ margin-top:15%;
+ color: black;
+ font-size: 40px;
+}
 
 @keyframes girarCorazon{
     0%{
